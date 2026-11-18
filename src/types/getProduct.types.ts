@@ -3,12 +3,12 @@ export type getAllProductTypes = {
     curr: number;
     prev: number;
     limit: number;
-    lat: bigint;
-    lan: bigint;
+    lat: number;
+    lan: number;
 };
 
 export type getSingleProductTypes = {
     productId: string;
-    lat: bigint;
-    lan: bigint;
+    lat: number;
+    lan: number;
 };

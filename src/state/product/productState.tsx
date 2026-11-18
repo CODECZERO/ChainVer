@@ -19,7 +19,7 @@ export const useProductPageState = create<ProductPageStateInterface>((set) => ({
         curr: s.curr + 10
     })),
     decrmentPage: () => set((s) => ({
-        curr: s.curr - 10
+        curr: (s.curr > 0) ? s.curr = s.curr - 10 : 0
     }))
 
 }));
