@@ -13,7 +13,7 @@ import type { ProductData } from "../../types/productData.types"
 
 export default function productApi(url: string) {
     return {
-        getAllProduct: async (prev: number, curr: number, limit: number = 10, lat: bigint, lan: bigint) => {
+        getAllProduct: async (prev: number, curr: number, limit: number = 10, lat: number, lan: number) => {
             //the get always gonna get the data based on client geo location or retrun whatevery data is their , if no geo data present
             return coreFetch(`${url}/product`, 'get', { prev, curr, limit, lat, lan });
         },
